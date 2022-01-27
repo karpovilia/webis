@@ -1,0 +1,2033 @@
+<html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+
+    <meta charset="utf-8">
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/i/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Questions in topic: java - Unity Answers</title>
+    <meta name="description" content="Unity is the ultimate game development platform. Use Unity to build high-quality 3D and 2D games, deploy them across mobile, desktop, VR/AR, consoles or the Web, and connect with loyal and enthusiastic players and customers.">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script type="text/javascript" async="" src="//u.heatmap.it/conf/answers.unity3d.com.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20170919161736/recaptcha__en.js"></script><script async="" src="https://u.heatmap.it/log.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=002645370080425984202:i_d7wpkpdzy"></script><script type="text/javascript" async="" src="http://www.google.com/cse/cse.js?cx=002645370080425984202:i_d7wpkpdzy"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NXN7P4"></script><script type="text/javascript">
+    var askFormURL = '/questions/ask.html';
+    var logoutURL = '/users/logout.html';
+    var voteUpJsonURL = '/commands/0/voteup.json';
+    var voteDownJsonURL = '/commands/0/votedown.json';
+    var getVotesJsonUrl = '/%7Bnode%7D/getVotes.json';
+    var related_questions_url = '/search.json';
+    var emailCheckerURL = '/users/temporaryLogin/dupsUserEmailCheck.json';
+
+    var authorizedFileTypes = 'gif,png,jpg,jpeg,zip,tar.gz,pdf,txt'.split(",");
+    var authorizedImageTypes = 'gif,png,jpg,jpeg'.split(",");
+
+    var flashMessages = [];
+
+    var pageContext = {
+        currentUser: {
+            id: '',
+            username: 'Anonymous',
+            url: '#',
+            avatar: '',
+            reputation: '',
+            follows: null,
+            canCreateTopics: false
+        },
+        attachments: {
+            maxSizeBytes: 524288,
+            maxSizeBytesTotal: 1048576
+        },
+        i18n: {
+            confirm: "Are you sure?",
+            yes: "Yes",
+            no: "No",
+            save: "Save",
+            cancel: "Cancel",
+            close: "Close",
+            edit: "Edit",
+            insert: "Insert",
+            upload: "Upload",
+            download: "Download",
+            choose: "Choose",
+            deleted: "Deleted",
+            ok: "Ok",
+            by: "by",
+            word: "word",
+            words: "words",
+            character: "character",
+            characters: "characters",
+            login: "Sign in",
+            register: "Register",
+            timeAgo: "{0} ago",
+            timeAt: "at",
+            day: "day",
+            days: "days",
+            hour: "hour",
+            hours: "hours",
+            minute: "minute",
+            minutes: "minutes",
+            second: "sec",
+            seconds: "secs",
+            justNow: "just now",
+            retag: "retag",
+            comment: "Comment",
+            comments: "Comments",
+            showOneComment: "<i class='icon-comments'></i> Show 1",
+            hideOneComment: "<i class='icon-comments'></i> Hide 1",
+            showNComments: "<i class='icon-comments'></i> Show $n",
+            hideNComments: "<i class='icon-comments'></i> Hide $n",
+            question: "question",
+            questions: "Questions",
+            answer: "Answer",
+            answers: "Answers",
+            posts: "Posts",
+            wiki: "Wiki",
+            reputation: "Reputation",
+            unlike: "<i class=' icon-chevron-up'></i>",
+            like: "<i class=' icon-chevron-up'></i>",
+            likes: "Likes",
+            follow: "Follow",
+            unfollow: "Unfollow",
+            following: "Following",
+            followers: "Followers",
+            awarded: "Awarded",
+            completedBy: "Recently completed by",
+            joined: "Joined",
+            authorizedTypes: "Allowed Upload Types",
+            uploadDialog: {
+                uploadFile: "Choose a file to upload",
+                doUpload: "Upload",
+                fileTooBig: "Your attachment must be $size or smaller.",
+                invalidAttachmentType: "Your attachment must be one of: gif,png,jpg,jpeg,zip,tar.gz,pdf,txt",
+                invalidImageType: "Your image must be one of: gif,png,jpg,jpeg"
+            },
+            previewAndCropDialog: {
+                previewAndResize: "Preview and resize",
+                accept: "Accept"
+            },
+
+            closeQuestionTitle: "Close or Flag",
+            lockPostModalTitle: "Lock",
+            reportQuestionModalTitle: "Report",
+            confirmModalTitle: "Please confirm",
+            convertToAnswerText: "Are you sure you want to convert this comment to answer?",
+            unlockPostModalText: "Are you sure you want to allow comments on this post?",
+            cancelReportModalText: "Are you sure you want to undo reporting this post?",
+
+            reportSuccessText: "This post has been successfully reported.",
+            reportCancelText: "Your report on this post has been sucessfully canceled.",
+
+            commandsMoveToSpace: "Move",
+            commandsGiveReputation: "Reward user",
+            commandsGiveReputationSuccess: "Points awarded successfully",
+            commandsConvertToCommentTitle: "Select comment location",
+            uploadProfilePictureSelectButton: "Select photo from your computer",
+            changeAvatarSelectButton: "Select photo from your computer",
+            changeAvatarSelectNoPhoto: "No photo selected",
+            postControlsRedirectTitle: "Redirect",
+
+            WMDImageDialogText: "Enter image url",
+            WMDLinkDialogText: "Enter url",
+            WMDUploadImage: "upload image",
+            WMDBold: "Strong <strong> Ctrl+B",
+            WMDItalic: "Emphasis <em> Ctrl+I",
+            WMDLink: "Hyperlink <a> Ctrl+L",
+            WMDQuote: "Blockquote <blockquote> Ctrl+Q",
+            WMDCode: "Code Sample <pre><code> Ctrl+K",
+            WMDImage: "Image <img> Ctrl+G",
+            WMDAttachment: "Attachment Ctrl+U",
+            WMDOrderedList: "Numbered List <ol> Ctrl+O",
+            WMDUnorderedList: "Bulleted List <ul> Ctrl+U",
+            WMDHeading: "Heading <h1>/<h2> Ctrl+H",
+            WMDHorizontalRule: "Horizontal Rule <hr> Ctrl+R",
+            WMDUndo: "Undo - Ctrl+Z",
+            WMDRedoWin: "Redo - Ctrl+Y",
+            WMDRedoOther: "Redo - Ctrl+Shift+Z",
+            WMDHelp: "Markdown Help",
+
+            draftMessage: "We noticed that you were previously working on TYPO. What would you like to do now?",
+            draftSaveMessage: "Saving Draft...",
+            draftLoadButton: "Load Draft",
+            draftDeleteButton: "Delete Draft",
+
+            linkMenuInsertLink: "Insert link",
+            linkMenuEditLink: "Edit link",
+            linkMenuUnlink: "Remove link",
+            linkMenuAnchor: "Anchor",
+            linkMenuMailto: "Email",
+            inputTextPrompt: "Text",
+            inputWebPrompt: "URL",
+            inputLinkNewTab: "Open link in a new tab",
+            inputImageForm: "Update Image",
+            inputImageTitle: "Title",
+            inputImagePosition: "Position",
+            inputImagePositionNone: "None",
+            inputImagePositionLeft: "Left",
+            inputImagePositionRight: "Right",
+
+            formattingLabel: "Formatting",
+            formattingParagraph: "Normal Text",
+            formattingQuote: "Quote",
+            formattingCode: "Code",
+            formattingHeader: "Header",
+            formattingBold: "Bold",
+            formattingItalic: "Italic",
+            formattingUnderline: "Underline",
+            formattingFontColor: "Font Color",
+            formattingBackColor: "Back Color",
+            formattingIndent: "Indent",
+            formattingOutdent: "Outdent",
+            formattingAlignment: "Alignment",
+            formattingAlignLeft: "Align text to the left",
+            formattingAlignCenter: "Center text",
+            formattingAlignRight: "Align text to the right",
+            formattingAlignJustify: "Justify text",
+            formattingHorizontalRule: "Insert Horizontal Rule",
+
+            toolTipsInsertImage: "Insert Image",
+            toolTipsInsertFile: "Insert File",
+            toolTipsInsertCode: "Insert Code",
+            toolTipsInsertVideo: "Insert Video",
+            toolTipsInsertTable: "Insert Table",
+            toolTipsorderedList: "Ordered List",
+            toolTipsunorderedList: "Unordered List",
+            toolTipLink: "Link",
+
+            tableInsert: "Insert Table",
+            tableRows: "Rows",
+            tableColumns: "Columns",
+            tableInsertRowAbove: "Add Row Above",
+            tableInsertRowBelow: "Add Row Below",
+            tableInsertColumnLeft: "Add Column Left",
+            tableInsertColumnRight: "Add Column Right",
+            tableDelete: "Delete Table",
+            tableDeleteColumn: "Delete Column",
+            tableDeleteRow: "Delete Row",
+            tableAddHead: "Add Header",
+            tableDeleteHead: "Delete Header",
+
+            uploadOrChoose: "Or Choose",
+            uploadDropFileHere: "Drop file here",
+            uploadFilenameOptional: "Name (optional)",
+
+            emailValidationPrompt: "Resend validation email",
+            emailValidationPromptBody: "Do you want to resend email validation?",
+            invalidReputation: "Error: You must enter a valid Integer without commas."
+        },
+        url: {
+            login: "/users/login.html",
+            register: "/users/register.html",
+            getRevision: "/revisions/get-revision.json",
+            getComments: "/comments/%25ID%25/list.json",
+            uploadFile: "/uploadFile.html",
+            uploadProgress: "/uploadProgress.json",
+            uploadPreview: "/uploadPreview.html",
+            cropUpload: "/cropUpload.json",
+            cancelUpload: "/cancelUpload.json",
+            markdownHelp: "/static/markdown/help.html",
+            updateMarkdown: "/commands/updateMarkdown.json",
+            profile: "/users/{id}/{plug}.html",
+            extractKeywords: "/extract-keywords.json",
+            follow: "/follow/%7BobjId%7D/%7Btype%7D.json",
+            unfollow: "/unfollow/%7BobjId%7D/%7Btype%7D.json",
+            getUserFollows: "/%7Buser%7D/getUserFollows.json",
+            condensedProfileUrl: "/users/%7Buser%7D/condensedProfile.json",
+            viewTopicJSON: "/topics/%7Btopic%7D/view.json",
+            topicIcon: "/topics/%7Btopic%7D/icon.html",
+            topic: "/topics/%7Btopic%7D.html",
+            topicSearch: "/search/topics.json",
+            awardListUrl: "/badge/%7BawardType%7D/%7Bdesc%7D.json",
+            usersSearch: "/users/list.json",
+            usersLookup: "/users/lookup.json",
+            mentionsSearch: "/users/mentionsSearch.json",
+            searchJson: "/search.json",
+            trackJs: "/static/trackJs.json",
+            userAvatar: "/users/%7BuserId%7D/photo/view.html",
+            revisionView: "/revisions/{nodeId}.html"
+        },
+        extraScripts: {
+            jcrop: {
+                js: '/themes/thub/scripts/jcrop/js/jquery.Jcrop.js',
+                css: '/themes/thub/scripts/jcrop/css/jquery.Jcrop.css'
+            }
+        },
+        options: {
+        	maxTopics: '5',
+            gravatarEnabled: true
+        },
+        additional: {"recaptchaKey":"6LdgnSUUAAAAAAqL8W_eR-OFMVywBpdvXECfMXtd","TH_CSRF":"a-3618832837560676487"},
+        useRelativeTime: true,
+        userRealName: false
+    };
+    pageContext.i18n["delete"] = "Delete";
+</script>
+
+        <!--[if lte IE 10]>
+    <script src="/themes/base/scripts/compatibility/indexOf.js" type="text/javascript"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/themes/base/scripts/compatibility/document.getSelection.js" type="text/javascript"></script>
+    <script src="/themes/base/scripts/compatibility/ierange-m2-packed.js" type="text/javascript"></script>
+    <style type="text/css">
+        input[type="password"] {
+            font-family: Arial;
+        }
+    </style>
+    <![endif]-->
+
+<script type="text/javascript" src="/themes/unity-thub-1632/pack/combined.js.h261320352.pack" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+(function ($) {
+    "use strict";
+
+    $.extend($.fn.select2.defaults, {
+        formatNoMatches: function () {
+            return 'No matches found';
+        },
+        formatInputTooShort: function (input, min) {
+            var n = min - input.length;
+            if (n == 1) {
+                return 'Please enter 1 more character.';
+            }
+            else {
+                var return_str = "Please enter $n more characters.";
+                return return_str.replace("$n", n.toString());
+            }
+        },
+        formatInputTooLong: function (input, max) {
+            var n = input.length - max;
+            if (n == 1)
+                return 'Please delete 1 character.';
+            else {
+                var return_str = 'Please delete $n characters.';
+                return return_str.replace("$n", n.toString());
+            }
+        },
+        formatSelectionTooBig: function (limit) {
+            if (limit == 1)
+                return 'You can only select 1 item.';
+            else {
+                var return_str = 'You can only select $n items.';
+                return return_str.replace("$n", limit.toString());
+            }
+        },
+        formatLoadMore: function (pageNumber) {
+            return 'Loading more results...';
+        },
+        formatSearching: function () {
+            return 'Searching...';
+        }
+    });
+})(jQuery);
+</script>
+
+    <script type="text/javascript" src="http://unity3d.com/profiles/unity3d/themes/unity/js/modernizr.min.js"></script>
+    <script src="/themes/unity-thub-1632/includes/unity.js" type="text/javascript"></script>
+
+    <script src="/themes/thub/scripts/jquery.tmpl.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/themes/thub/images/favicon.ico">
+
+    <!-- Core Bootstrap css + Kickstrap styles -->
+<link rel="stylesheet" type="text/css" href="/themes/unity-thub-1632/pack/combined.css.h1838984638.pack" charset="utf-8"><link rel="stylesheet" type="text/css" href="/themes/unity-thub-1632/pack/combined.css.h-1263525964.pack" charset="utf-8">
+	<link rel="stylesheet" href="/themes/unity-thub-1632/includes/unity.css">
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var $style;
+            $style = $('<style type="text/css">:before,:after{content:none !important}</style>');
+            $('head').append($style);
+            return setTimeout((function() {
+                return $style.remove();
+            }), 0);
+        });
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){pageContext.options.commentsAttachmentsEnabled = true});
+        $(document).ready(function(){
+                commands["convertToComment"].onSuccess = function(data) {
+	                setTimeout(function(){
+        	    		commandUtils.reloadPage(); //wait 1 second before reloading
+        		}, 1000);
+                };
+        });
+    </script>
+
+        
+                <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXN7P4');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+    if(window.location.pathname === "/users/register.html") {
+            window.location.href="https://id.unity.com/account/new";
+    }
+</script>
+
+
+
+        
+
+
+
+    
+
+<script src="https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22search%22%2C%22version%22%3A%221.0%22%2C%22callback%22%3A%22__gcse.scb%22%2C%22style%22%3A%22https%3A%2F%2Fwww.google.com%2Fcse%2Fstatic%2Fstyle%2Flook%2Fv2%2Fdefault.css%22%2C%22language%22%3A%22en%22%7D%5D%7D" type="text/javascript"></script><script src="https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22search%22%2C%22version%22%3A%221.0%22%2C%22callback%22%3A%22__gcse.scb%22%2C%22style%22%3A%22https%3A%2F%2Fwww.google.com%2Fcse%2Fstatic%2Fstyle%2Flook%2Fv2%2Fdefault.css%22%2C%22language%22%3A%22en%22%7D%5D%7D" type="text/javascript"></script><link type="text/css" href="https://www.google.com/uds/api/search/1.0/01d3e4019d02927b30f1da06094837dc/default+en.css" rel="stylesheet"><link type="text/css" href="https://www.google.com/cse/static/style/look/v2/default.css" rel="stylesheet"><script type="text/javascript" src="https://www.google.com/uds/api/search/1.0/01d3e4019d02927b30f1da06094837dc/default+en.I.js"></script><link type="text/css" href="https://www.google.com/uds/api/search/1.0/01d3e4019d02927b30f1da06094837dc/default+en.css" rel="stylesheet"><link type="text/css" href="https://www.google.com/cse/static/style/look/v2/default.css" rel="stylesheet"><script type="text/javascript" src="https://www.google.com/uds/api/search/1.0/01d3e4019d02927b30f1da06094837dc/default+en.I.js"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #2F5BB7;
+background-color: #357AE8;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #CCCCCC;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #CCCCCC;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #5284BD;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #5284BD;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #5284BD;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #5284BD;
+}
+.gsc-cursor-page {
+color: #5284BD;
+}
+a.gsc-trailing-more-results:link {
+color: #5284BD;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #333333;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #5284BD;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #5284BD;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #F6F6F6;
+background-color: #F6F6F6;
+}
+.gsc-completion-title {
+color: #5284BD;
+}
+.gsc-completion-snippet {
+color: #333333;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #1155CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #333333;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #009933;
+}
+.gsc-input input.gsc-input {
+background: none repeat scroll 0% 0% white !important;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gscsep_a{display:none}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}#gsc-i-id1::-webkit-input-placeholder{font-size:14px}#gsc-i-id1:-moz-placeholder{font-size:14px}#gsc-i-id1::-moz-placeholder{font-size:14px}#gsc-i-id1:-ms-input-placeholder{font-size:14px}#gsc-i-id1:focus::-webkit-input-placeholder{color:transparent}#gsc-i-id1:focus:-moz-placeholder{color:transparent}#gsc-i-id1:focus::-moz-placeholder{color:transparent}#gsc-i-id1:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gscsep_a{display:none}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}#gsc-i-id1::-webkit-input-placeholder{font-size:14px}#gsc-i-id1:-moz-placeholder{font-size:14px}#gsc-i-id1::-moz-placeholder{font-size:14px}#gsc-i-id1:-ms-input-placeholder{font-size:14px}#gsc-i-id1:focus::-webkit-input-placeholder{color:transparent}#gsc-i-id1:focus:-moz-placeholder{color:transparent}#gsc-i-id1:focus::-moz-placeholder{color:transparent}#gsc-i-id1:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+<body style="">
+<div id="not-footer">
+
+<header id="section-header" class="section section-header mb40">
+	<div class="header-wrapper">
+		<div class="top-fill">
+			<div class="wrap">
+				<div class="fill"></div>
+			</div>
+		</div>
+		<nav class="top-nav">
+			<div class="wrap">
+				<div class="shard"></div>
+				<div class="logo"><a href="http://unity3d.com/"></a></div>
+				<ul>
+					<li><a href="http://unity3d.com/unity">Unity</a></li>
+					<li><a href="http://unity3d.com/services">Services</a></li>
+					<li><a href="http://unity3d.com/showcase">Made with Unity</a></li>
+					<li><a href="http://unity3d.com/learn">Learn</a></li>
+					<li><a href="http://unity3d.com/community" class="active-trail">Community</a></li>
+					<li class="m-right last"><a href="http://unity3d.com/asset-store">Asset Store</a></li>
+					<li class="m-right"><a href="http://unity3d.com/get-unity" title="">Get Unity</a></li>
+				</ul>
+				<div class="user-icon"></div>
+				<div class="search-icon"></div>
+				<div class="search-wrapper">
+					<script>(function(){ var cx = '002645370080425984202:i_d7wpkpdzy'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+					<div class="search-box"><div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="https://www.google.com/uds/css/v2/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr style="display: none;"><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="https://www.google.com/cse/static/images/1x/googlelogo_grey_46x15dp.png" class="gsc-branding-img" srcset="https://www.google.com/cse/static/images/2x/googlelogo_grey_46x15dp.png 2x"></td></tr></tbody></table></form></div></div></div>
+				</div>
+				<div class="user-wrapper">
+			    
+			    <div class="content clear">
+			    
+			    
+			    
+			    	
+			    		<h2>UNITY ACCOUNT</h2>
+			    		<small class="bb mb15">You need a Unity Account to shop in the Online and Asset Stores, participate in the Unity Community and manage your license portfolio.</small>
+			    		
+			    				
+			    		<a class="blue-btn sbtn mr10" id="login" href="/users/login.html">Login</a>
+			    			
+			    			
+			    	    <a href="/users/register.html" class="gray-btn sbtn">Create account</a>
+			    	
+			    
+				</div>
+			</div>
+		</div></nav>
+		<nav class="sub-nav">
+			<div class="wrap">
+				<div class="sub-fill"></div>
+				<ul class="secondary-menu">
+				  <li class="menu-383 first"><a href="http://forum.unity3d.com/" title="">Forums</a></li>
+				  <li class="menu-384"><a class="active-trail" href="/" title="">Answers</a></li>
+				  <li class="menu-385"><a href="http://feedback.unity3d.com/" title="">Feedback</a></li>
+				  <li class="menu-767"><a href="http://issuetracker.unity3d.com/" title="">Issue Tracker</a></li>
+				  <li class="menu-933"><a href="http://blogs.unity3d.com/" title="">Blog</a></li>
+				  <li class="menu-764"><a href="http://evangelists.unity3d.com/" title="">Evangelists</a></li>
+				  <li class="menu-860 last"><a href="http://unity3d.com/community/user-groups" title="">User Groups</a></li>
+				</ul>
+				<script> var submore = 'More'; </script>
+			</div>
+		</nav>
+	</div>
+</header>
+<nav class="mobile-menu">
+	<div class="wrap">
+		<div class="mobile-search">
+			<script>(function(){ var cx = '002645370080425984202:i_d7wpkpdzy'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+			<div class="search-box"><div id="___gcse_1"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id2"><table cellspacing="0" cellpadding="0" id="gs_id51" class="gstl_51 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti51" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id2" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st51" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb51">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="https://www.google.com/uds/css/v2/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr style="display: none;"><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="https://www.google.com/cse/static/images/1x/googlelogo_grey_46x15dp.png" class="gsc-branding-img" srcset="https://www.google.com/cse/static/images/2x/googlelogo_grey_46x15dp.png 2x"></td></tr></tbody></table></form></div></div></div>
+		</div>
+		<div class="menu">
+			<h2>Navigation</h2>
+			<ul>
+				<li><a href="http://unity3d.com/">Home</a></li>
+				<li><a href="http://unity3d.com/unity">Unity</a></li>
+				<li><a href="http://unity3d.com/industries">Industries</a></li>
+				<li><a href="http://unity3d.com/showcase">Made with Unity</a></li>
+				<li><a href="http://unity3d.com/learn">Learn</a></li>
+				<li><a href="http://unity3d.com/community" class="active-trail">Community</a>
+				  <ul class="secondary-menu">
+				    <li class="menu-383 first"><a href="http://forum.unity3d.com/" title="">Forums</a></li>
+				    <li class="menu-384"><a class="active-trail" href="/" title="">Answers</a></li>
+				    <li class="menu-385"><a href="http://feedback.unity3d.com/" title="">Feedback</a></li>
+				    <li class="menu-767"><a href="http://issuetracker.unity3d.com/" title="">Issue Tracker</a></li>
+				    <li class="menu-933"><a href="http://blogs.unity3d.com/" title="">Blog</a></li>
+				    <li class="menu-764"><a href="http://evangelists.unity3d.com/" title="">Evangelists</a></li>
+				    <li class="menu-860 last"><a href="http://unity3d.com/community/user-groups" title="">User Groups</a></li>
+				  </ul>
+				</li>
+				<li><a href="http://unity3d.com/get-unity" title="">Get Unity</a></li>
+				<li><a href="https://www.assetstore.unity3d.com/">Asset Store</a></li>
+			</ul>
+		</div>
+		
+		<div class="user">
+	    
+	    <div class="content clear">
+	    
+	    
+	    
+	    	
+	    		<h2>Unity account</h2>
+	    		<small class="mb15 cl">You need a Unity Account to shop in the Online and Asset Stores, participate in the Unity Community and manage your license portfolio.</small>
+	    		
+	    				
+	    		<a id="login" href="/users/login.html" class="blue-btn sbtn mr10">Login</a>
+	    			
+	    			
+	    	    <a href="/users/register.html" class="gray-btn sbtn">Create account</a>
+	    	
+	    </div>
+		</div>
+		<div class="lang clear">
+			<h2>Language</h2>
+			<div class="language-switcher">
+				<ul id="mobile-lang" class="languages">
+					<li><a href="http://china.unity3d.com/" data-lang="cn"><span class="translation_missing" title="translation missing: en.layouts.language_selector.lang.chinese">Chinese</span></a></li>
+					<li><a href="http://spanish.unity3d.com/" data-lang="es"><span class="translation_missing" title="translation missing: en.layouts.language_selector.lang.spanish">Spanish</span></a></li>
+					<li><a href="http://japan.unity3d.com/" data-lang="jp"><span class="translation_missing" title="translation missing: en.layouts.language_selector.lang.japanese">Japanese</span></a></li>
+					<li><a href="http://www.unity3dkorea.com/" data-lang="kr"><span class="translation_missing" title="translation missing: en.layouts.language_selector.lang.korean">Korean</span></a></li>
+					<li><a href="http://portuguese.unity3d.com/" data-lang="pt"><span class="translation_missing" title="translation missing: en.layouts.language_selector.lang.portuguese">Portuguese</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>    
+<section id="section-content" class="section section-content">
+	<header class="m-header clear">
+		<div class="m-logo"><a href="http://unity3d.com"></a></div>
+		<div class="m-navbtn rel"><div class="lines"></div></div>
+		<div class="m-searchbtn"></div>
+		<div class="m-userbtn"></div>
+	</header>
+
+
+        <div>
+                <!-- Google Tag Manager (noscript) -->
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXN7P4"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        </div>
+
+
+<div id="main-navbar" class="navbar navbar-fixed-top">
+    
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="search-wrapper span8">
+                    <a type="button" class="btn btn-navbar off-canvas-nav-btn" href="#sidr">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </a>
+                    <form action="/search.html" method="get" class="navbar-search">
+                        <input type="hidden" id="search-filters" name="f" value="">
+                        <input type="hidden" id="search-types" name="type" value="question">
+                        <input type="hidden" id="search-redirect" name="redirect" value="search/search">
+                        <input type="hidden" id="search-sort" name="sort" value="relevance">
+                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="search-query ui-autocomplete-input" value="" name="q" id="search-query" data-provide="typeahead" data-items="4" autocomplete="off" placeholder="Find posts and topics...">
+                        <i class="icon-search"></i>
+
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+//                                var ie7 = $.browser.msie && $.browser.version <= 7;
+
+                                var label = $('.navbar-search label[for=search_box]')
+                                label.css({
+                                    position: 'absolute',
+                                    top: 4,
+                                    left: 17,
+                                    zindex: 10
+                                });
+                                $('#search_box')
+                                        .focus(function () {
+                                            label.hide()
+                                        })
+                                        .blur(function () {
+                                            this.value == "" ? label.show() : label.hide()
+                                        })
+                            });
+                        </script>
+                        <div id="searchResultsAutoComplete"><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></div>
+                    </form>
+                </div>
+
+                <ul class="nav-links span4">
+                    <li>
+                            <div class="btn-group navbar-action">
+
+                                <a id="create-button" class="btn btn-success" href="/questions/ask.html">Ask a question</a>
+                            </div>
+                    </li>
+                        <li class="dropdown">
+                            <a href="#" id="spaces-menu-dropdown" class="dropdown-toggle" data-toggle="dropdown">
+Spaces                                <i class="icon-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                    <li>
+                                        <a class="main-nav" href="/spaces/8/index.html">Default</a>
+                                    </li><li>
+                                        <a class="main-nav" href="/spaces/9/index.html">Help Room</a>
+                                    </li><li>
+                                        <a class="main-nav" href="/spaces/12/index.html">META</a>
+                                    </li><li>
+                                        <a class="main-nav" href="/spaces/11/index.html">Moderators</a>
+                            </li></ul>
+                        </li>
+                    <li class="dropdown">
+                        <a href="#" id="explore-menu-dropdown" class="dropdown-toggle" title="Explore" data-toggle="dropdown">
+                            <i class="icon-sitemap"></i>
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="http://answers.unity3d.com/topics.html">Topics</a>
+                            </li>
+
+                                <li>
+                                    <a href="/questions/index.html">Questions</a>
+                                </li>
+
+                            <li>
+                                <a href="/users/index.html">Users</a>
+                            </li>
+
+                            <li>
+                                <a href="/badge/types.html">Badges</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <section id="middle">
+
+        <div class="main">
+
+            <div class="main-inner">
+
+                <div class="container">
+                    <div class="row">
+                                <div class="span8 mainContent">
+
+                                        
+
+
+
+
+<div class="sticky-posts-list">
+    <p><a href="/questions/1103508/fixes-in-upcoming-releases-of-unity-answers.html">Fixes in upcoming releases of Unity Answers</a></p>
+
+    <p><a href="/questions/1040785/using-a-good-tone-of-voice-when-replying-to-posts.html">Using a good tone of voice when replying to posts</a></p>
+
+    <p><a href="/questions/1034566/requests-for-new-tagstopics.html">Requests for new tags/topics</a></p>
+
+    <p><a href="/questions/1033462/how-to-use-the-meta-space.html">How to use the META space</a></p>
+
+    <p><a href="/questions/1033428/how-to-use-the-moderator-space.html">How to use the Moderator space</a></p>
+</div>
+
+
+
+
+<div class="widget">
+    <div class="widget-header">
+        <div class="pull-left dropdown">
+            <a class="pull-left dropdown-toggle" data-toggle="dropdown" href="#"><h3>Questions in topic: java <i class="icon-caret-down"></i></h3></a>
+            <ul class="dropdown-menu">
+            
+            <li><a href="/questions/unanswered.html">Unanswered Questions</a></li>
+            <li><a href="/questions/recommended.html">Recommended Questions</a></li>
+            </ul>
+        </div>
+<ul class="nav nav-pills sort">
+<li class="disabled" title="Relevant"><a href="#"><i class="icon-signal"></i></a></li>
+<li title="Updated" class="active"><a href="?sort=active&amp;filter=all"><i class="icon-edit"></i></a></li>
+<li title="Created"><a href="?sort=newest&amp;filter=all"><i class="icon-time"></i></a></li>
+<li title="Hottest"><a href="?sort=hottest&amp;filter=all"><i class="icon-fire"></i></a></li>
+<li title="Votes"><a href="?sort=votes&amp;filter=all"><i class="icon-thumbs-up"></i></a></li>
+<li title="Most Viewed"><a href="?sort=viewCount&amp;filter=all"><i class="icon-eye-open"></i></a></li>
+</ul>    </div>
+
+    <div class="btn-group pull-right" id="id_topic_follow">
+        <a class="btn  btn-nostyle" title="Follow by RSS" href="/feed/1281/topic.rss">
+            <i class="icon-rss"></i>
+
+        </a>
+Once you sign in you will be able to subscribe for any updates here
+
+    </div>
+
+
+
+    <div class="widget-content" id="id_topic_content">
+
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1007363/waqark1103.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1007363" data-hasqtip="0"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/7e00eae4865b597a593769a66a22a811?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1387684" alt="avatar image" title="Waqark1103">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1007363/waqark1103.html" rel="user" nodeid="1007363" data-hasqtip="1">Waqark1103</a> commented</p>
+            <h4 class="title"><a href="/questions/1387684/unable-to-convert-classes-into-dex-format-17.html">Unable to Convert classes into dex Format</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Sep 21, 2017 8:29:58 AM">yesterday</span>
+            <span class="tags"><a href="/topics/unity5.html" class="tag" rel="topic" nodeid="667811" data-hasqtip="81">unity5</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="82">java</a>·<a href="/topics/convert.html" class="tag" rel="topic" nodeid="419" data-hasqtip="83">convert</a>·<a href="/topics/classes.html" class="tag" rel="topic" nodeid="619" data-hasqtip="84">classes</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1387684-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1023507/blacq-shadow.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1023507" data-hasqtip="2"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/86928218d5c70995c15f8de17d28b46a?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1408936" alt="avatar image" title="blacq_shadow">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1023507/blacq-shadow.html" rel="user" nodeid="1023507" data-hasqtip="3">blacq_shadow</a> asked</p>
+            <h4 class="title"><a href="/questions/1408936/how-to-implement-listeners-in-unity3d-android-plug.html">How to implement listeners in unity3d android plugin?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Sep 19, 2017 12:22:22 AM">3 days ago</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="85">android</a>·<a href="/topics/scripting+problem.html" class="tag" rel="topic" nodeid="124734" data-hasqtip="86">scripting problem</a>·<a href="/topics/scripting+beginner.html" class="tag" rel="topic" nodeid="131420" data-hasqtip="87">scripting beginner</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="88">java</a>·<a href="/topics/positioning.html" class="tag" rel="topic" nodeid="981" data-hasqtip="89">positioning</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1408936-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/8771/owen-reynolds.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="8771" data-hasqtip="4"> <img class="gravatar " width="32" src="/users/8771/photo/view.html?time=1442167905588&amp;s=32" id="user-avatar-1402992" alt="avatar image" title="Owen-Reynolds">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/8771/owen-reynolds.html" rel="user" nodeid="8771" data-hasqtip="5">Owen-Reynolds</a> commented</p>
+            <h4 class="title"><a href="/questions/1402992/can-a-class-array-contain-subclass-items.html">Can a class array contain subclass items?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Sep 6, 2017 9:05:09 PM">Sep 6, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1402992-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/990193/mastermindsdei.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="990193" data-hasqtip="6"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/53b40083ae16f2ee247af744e0c1b192?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-585288" alt="avatar image" title="mastermindsdei">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/990193/mastermindsdei.html" rel="user" nodeid="990193" data-hasqtip="7">mastermindsdei</a> commented</p>
+            <h4 class="title"><a href="/questions/585288/can-i-instance-arraylist-through-androidjavaobject.html">Can I instance ArrayList[String] through AndroidJavaObject ?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Aug 31, 2017 4:49:22 PM">Aug 31, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="90">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="91">java</a>·<a href="/topics/plugins.html" class="tag" rel="topic" nodeid="2773" data-hasqtip="92">plugins</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>2</span> Replies</p>
+
+        <p id="post-585288-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/544058/grzesiu10.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="544058" data-hasqtip="8"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/db5d1285a02076ded54e7abdfd1d26ef?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1399745" alt="avatar image" title="grzesiu10">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/544058/grzesiu10.html" rel="user" nodeid="544058" data-hasqtip="9">grzesiu10</a> asked</p>
+            <h4 class="title"><a href="/questions/1399745/how-to-call-androidos-class-from-c-code.html">How to call android.os class from C# code?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Aug 28, 2017 5:29:24 AM">Aug 28, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="93">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="94">java</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1399745-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/404103/saracecilia.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="404103" data-hasqtip="10"> <img class="gravatar " width="32" src="/users/404103/photo/view.html?time=1483357157699&amp;s=32" id="user-avatar-1211017" alt="avatar image" title="SaraCecilia">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/404103/saracecilia.html" rel="user" nodeid="404103" data-hasqtip="11">SaraCecilia</a> published</p>
+            <h4 class="title"><a href="/questions/1211017/mac-jdk-error-on-build.html">Mac JDK error on build</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Aug 11, 2017 6:49:56 AM">Aug 11, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>2</span> Replies</p>
+
+        <p id="post-1211017-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/407911/pleng.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="407911" data-hasqtip="12"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/08590141cf2f32d4c3bf55ebe5b750e5?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-777395" alt="avatar image" title="Pleng">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/407911/pleng.html" rel="user" nodeid="407911" data-hasqtip="13">Pleng</a> commented</p>
+            <h4 class="title"><a href="/questions/777395/consume-key-events-in-android.html">Consume key events in Android</a>
+         <span class="label label-info">Wiki</span></h4>
+
+        <p class="last-active-user muted">
+            <span title="Aug 10, 2017 9:42:06 AM">Aug 10, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="95">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="96">java</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-777395-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1018034/imindie.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1018034" data-hasqtip="14"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/96aeff201b6b19d745e5d65ec0c58ec8?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1385644" alt="avatar image" title="IMindie">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1018034/imindie.html" rel="user" nodeid="1018034" data-hasqtip="15">IMindie</a> published</p>
+            <h4 class="title"><a href="/questions/1385644/how-to-integrate-unity-ads-to-my-game.html">How to integrate Unity Ads to my game?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Aug 10, 2017 2:55:17 AM">Aug 10, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1385644-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/627008/ilovebread.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="627008" data-hasqtip="16"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/c7d67aeffd066492e9fc057fc4d02d4f?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1379616" alt="avatar image" title="ilovebread">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/627008/ilovebread.html" rel="user" nodeid="627008" data-hasqtip="17">ilovebread</a> published</p>
+            <h4 class="title"><a href="/questions/1379616/any-way-to-exclude-buildconfigjava-from-unity-andr.html">Any way to exclude BuildConfig.java from unity-android-resources project via Gradle?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jul 26, 2017 2:01:57 PM">Jul 26, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1379616-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/117113/flyinghighup.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="117113" data-hasqtip="18"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/8332824099d91f2b6b4b0f7e67bed893?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1332366" alt="avatar image" title="FlyingHighUp">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/117113/flyinghighup.html" rel="user" nodeid="117113" data-hasqtip="19">FlyingHighUp</a> commented</p>
+            <h4 class="title"><a href="/questions/1332366/how-to-change-from-c-to-java.html">How to change from C# to JAVA?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jul 24, 2017 10:48:26 PM">Jul 24, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>4</span> Replies</p>
+
+        <p id="post-1332366-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/981655/febinmathew.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="981655" data-hasqtip="20"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/615244a1e0642dc5e71e2f0ba3f84b84?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-240682" alt="avatar image" title="febinmathew">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/981655/febinmathew.html" rel="user" nodeid="981655" data-hasqtip="21">febinmathew</a> commented</p>
+            <h4 class="title"><a href="/questions/240682/got-stuck-trying-to-extending-unityplayeractivity.html">Got stuck trying to extend UnityPlayerActivity following example in Unity documentation.</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jul 14, 2017 5:37:44 PM">Jul 14, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="97">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="98">java</a>·<a href="/topics/extend.html" class="tag" rel="topic" nodeid="430" data-hasqtip="99">extend</a>·<a href="/topics/jar.html" class="tag" rel="topic" nodeid="7249" data-hasqtip="100">jar</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-240682-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/51967/pajamajama.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="51967" data-hasqtip="22"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/bcda3d37f9be044e59541619e6e66459?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1369244" alt="avatar image" title="pajamajama">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/51967/pajamajama.html" rel="user" nodeid="51967" data-hasqtip="23">pajamajama</a> answered</p>
+            <h4 class="title"><a href="/questions/1369244/how-to-get-applicationpersistentdatapath-inside-a.html">How to get Application.PersistentDataPath inside a Java Android Plugin</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jun 23, 2017 6:03:51 PM">Jun 23, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="101">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="102">java</a>·<a href="/topics/androidplugin.html" class="tag" rel="topic" nodeid="5797" data-hasqtip="103">androidplugin</a>·<a href="/topics/persistentdatapath.html" class="tag" rel="topic" nodeid="209107" data-hasqtip="104">persistentdatapath</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted accepted">
+                <span>1</span> Reply</p>
+
+        <p id="post-1369244-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1013929/icoder30.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1013929" data-hasqtip="24"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/3074d52b9b3a4f9b716883643fda2dbd?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1341430" alt="avatar image" title="icoder30">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1013929/icoder30.html" rel="user" nodeid="1013929" data-hasqtip="25">icoder30</a> commented</p>
+            <h4 class="title"><a href="/questions/1341430/read-nfc-tag-from-unity3d-android.html">Read NFC tag  from Unity3d android</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jun 22, 2017 1:00:50 PM">Jun 22, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="105">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="106">java</a>·<a href="/topics/jar.html" class="tag" rel="topic" nodeid="7249" data-hasqtip="107">jar</a>·<a href="/topics/unity+plugin.html" class="tag" rel="topic" nodeid="598388" data-hasqtip="108">unity plugin</a>·<a href="/topics/intent.html" class="tag" rel="topic" nodeid="6122" data-hasqtip="109">intent</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1341430-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/394262/kamran-bigdely.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="394262" data-hasqtip="26"> <img class="gravatar " width="32" src="/users/394262/photo/view.html?time=1418762960833&amp;s=32" id="user-avatar-1107439" alt="avatar image" title="kamran-bigdely">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/394262/kamran-bigdely.html" rel="user" nodeid="394262" data-hasqtip="27">kamran-bigdely</a> published</p>
+            <h4 class="title"><a href="/questions/1107439/missing-androiddevelopmentplayerbinclassesjar.html">missing androiddevelopmentplayer\bin\classes.jar</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jun 9, 2017 11:44:00 PM">Jun 9, '17</span>
+            <span class="tags"><a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="110">java</a>·<a href="/topics/plugins.html" class="tag" rel="topic" nodeid="2773" data-hasqtip="111">plugins</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1107439-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/542736/voxel-busters.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="542736" data-hasqtip="28"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/23353289868617b6445898c68856527f?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-710682" alt="avatar image" title="Voxel-Busters">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/542736/voxel-busters.html" rel="user" nodeid="542736" data-hasqtip="29">Voxel-Busters</a> answered</p>
+            <h4 class="title"><a href="/questions/710682/how-do-i-save-a-screenshot-to-the-gallery-on-andro.html">How do I save a screenshot to the gallery on Android Kitkat 4.4.2 or above?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Jun 9, 2017 4:34:15 AM">Jun 9, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="112">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="113">java</a>·<a href="/topics/screenshot.html" class="tag" rel="topic" nodeid="164" data-hasqtip="114">screenshot</a>·<a href="/topics/gallery.html" class="tag" rel="topic" nodeid="2718" data-hasqtip="115">gallery</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-710682-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/694346/fdoumet.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="694346" data-hasqtip="30"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/a124ed085aab5165eec100e9971f7888?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1334762" alt="avatar image" title="fdoumet">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/694346/fdoumet.html" rel="user" nodeid="694346" data-hasqtip="31">fdoumet</a> published</p>
+            <h4 class="title"><a href="/questions/1334762/unity-5-android-how-to-set-non-fullscreen-by-defau.html">[Unity 5 / Android] How to set Non-fullscreen by Default?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 23, 2017 6:19:47 AM">May 23, '17</span>
+            <span class="tags"><a href="/topics/c%23.html" class="tag" rel="topic" nodeid="730" data-hasqtip="116">c#</a>·<a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="117">android</a>·<a href="/topics/health.html" class="tag" rel="topic" nodeid="745" data-hasqtip="118">health</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="119">java</a>·<a href="/topics/fullscreen.html" class="tag" rel="topic" nodeid="338" data-hasqtip="120">fullscreen</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1334762-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1009966/aimbift.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1009966" data-hasqtip="32"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/c68c1240e5f4b08b7752cee5b3ef8cb0?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1151594" alt="avatar image" title="AIMBIFT">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1009966/aimbift.html" rel="user" nodeid="1009966" data-hasqtip="33">AIMBIFT</a> answered</p>
+            <h4 class="title"><a href="/questions/1151594/end-of-line.html">End Of Line</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 21, 2017 12:36:07 PM">May 21, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted accepted">
+                <span>2</span> Replies</p>
+
+        <p id="post-1151594-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/983448/tanveertak.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="983448" data-hasqtip="34"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/42b28eafc6d6ed19c2e6dbb6235a43de?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1353116" alt="avatar image" title="tanveertak">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/983448/tanveertak.html" rel="user" nodeid="983448" data-hasqtip="35">tanveertak</a> published</p>
+            <h4 class="title"><a href="/questions/1353116/how-to-load-android-app-when-the-button-clicked-in.html">How to load android app when the button clicked in unity scene?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 19, 2017 1:51:42 PM">May 19, '17</span>
+            <span class="tags"><a href="/topics/c%23.html" class="tag" rel="topic" nodeid="730" data-hasqtip="121">c#</a>·<a href="/topics/unity+5.html" class="tag" rel="topic" nodeid="795826" data-hasqtip="122">unity 5</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="123">java</a>·<a href="/topics/androidplugin.html" class="tag" rel="topic" nodeid="5797" data-hasqtip="124">androidplugin</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted accepted">
+                <span>2</span> Replies</p>
+
+        <p id="post-1353116-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1009456/marktapang08.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1009456" data-hasqtip="36"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/d563988fab425b6d4b8c1535eb883fa3?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1020331" alt="avatar image" title="marktapang08">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1009456/marktapang08.html" rel="user" nodeid="1009456" data-hasqtip="37">marktapang08</a> published</p>
+            <h4 class="title"><a href="/questions/1020331/array-of-androidjavaclass-array-of-uri.html">How to translate ArrayList to C# using AndroidJavaClass?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 17, 2017 9:09:18 AM">May 17, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="125">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="126">java</a>·<a href="/topics/native.html" class="tag" rel="topic" nodeid="1508" data-hasqtip="127">native</a>·<a href="/topics/androidjavaobject.html" class="tag" rel="topic" nodeid="7265" data-hasqtip="128">androidjavaobject</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1020331-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1008282/ishafdo4.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1008282" data-hasqtip="38"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/c287d245c17ca4c730957f8f2930beba?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1352935" alt="avatar image" title="ishafdo4">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1008282/ishafdo4.html" rel="user" nodeid="1008282" data-hasqtip="39">ishafdo4</a> edited</p>
+            <h4 class="title"><a href="/questions/1352935/how-to-load-android-activity-when-the-button-click.html">How to load android activity when the button clicked in unity scene?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 14, 2017 5:25:38 AM">May 14, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1352935-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/484225/steril.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="484225" data-hasqtip="40"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/32ac8d32eaefb904e628e71f655a4fba?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1163067" alt="avatar image" title="steril">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/484225/steril.html" rel="user" nodeid="484225" data-hasqtip="41">steril</a> commented</p>
+            <h4 class="title"><a href="/questions/1163067/ikvm-unity-goes-crazy-after-the-first-compilation.html">[IKVM] Unity goes crazy after the first compilation</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 11, 2017 10:40:03 PM">May 11, '17</span>
+            <span class="tags"><a href="/topics/plugin.html" class="tag" rel="topic" nodeid="45" data-hasqtip="129">plugin</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="130">java</a>·<a href="/topics/libraries.html" class="tag" rel="topic" nodeid="6471" data-hasqtip="131">libraries</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1163067-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1002490/lscroberto.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1002490" data-hasqtip="42"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/83cd6e771a7978ae630cb8751d1f2743?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1349164" alt="avatar image" title="lscroberto">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1002490/lscroberto.html" rel="user" nodeid="1002490" data-hasqtip="43">lscroberto</a> published</p>
+            <h4 class="title"><a href="/questions/1349164/with-call-a-plugin-java-in-unity-for-usage-in-a-ap.html">with call a plugin java in unity for usage in a application for windows</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 8, 2017 1:12:09 PM">May 8, '17</span>
+            <span class="tags"><a href="/topics/unity+5.html" class="tag" rel="topic" nodeid="795826" data-hasqtip="132">unity 5</a>·<a href="/topics/plugin.html" class="tag" rel="topic" nodeid="45" data-hasqtip="133">plugin</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="134">java</a>·<a href="/topics/java+to+c%23.html" class="tag" rel="topic" nodeid="513101" data-hasqtip="135">java to c#</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1349164-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/815300/sehathesam.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="815300" data-hasqtip="44"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/3bbbaaa07f2c03c5e7285aa9b8b7f20b?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-338288" alt="avatar image" title="sehathesam">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/815300/sehathesam.html" rel="user" nodeid="815300" data-hasqtip="45">sehathesam</a> published</p>
+            <h4 class="title"><a href="/questions/338288/overriding-unityplayeractivity-on-android-class-no.html">Overriding UnityPlayerActivity on Android, Class not found at launch.</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 2, 2017 2:21:48 PM">May 2, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="136">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="137">java</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>2</span> Replies</p>
+
+        <p id="post-338288-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1007196/rash55.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1007196" data-hasqtip="46"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/3d80fcfb345d340c244d7c8fcb949469?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1281334" alt="avatar image" title="Rash55">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1007196/rash55.html" rel="user" nodeid="1007196" data-hasqtip="47">Rash55</a> published</p>
+            <h4 class="title"><a href="/questions/1281334/cannot-create-key-in-keystore.html">cannot create key in keystore</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 1, 2017 9:40:54 AM">May 1, '17</span>
+            <span class="tags"><a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="138">java</a>·<a href="/topics/key.html" class="tag" rel="topic" nodeid="732" data-hasqtip="139">key</a>·<a href="/topics/keystore.html" class="tag" rel="topic" nodeid="7239" data-hasqtip="140">keystore</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>1</span> Reply</p>
+
+        <p id="post-1281334-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/996776/alexpan4.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="996776" data-hasqtip="48"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/adea2dce14c70167fb50d363f2edc10f?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1346984" alt="avatar image" title="AlexPan4">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/996776/alexpan4.html" rel="user" nodeid="996776" data-hasqtip="49">AlexPan4</a> edited</p>
+            <h4 class="title"><a href="/questions/1346984/stop-android-jar-dependencies-message.html">Stop Android Jar dependencies message by downgrading play services sdk</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="May 1, 2017 9:29:08 AM">May 1, '17</span>
+            <span class="tags"><a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="141">java</a>·<a href="/topics/google+play+games.html" class="tag" rel="topic" nodeid="845288" data-hasqtip="142">google play games</a>·<a href="/topics/android+sdk.html" class="tag" rel="topic" nodeid="462402" data-hasqtip="143">android sdk</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1346984-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1001058/anyotherprogrammer.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1001058" data-hasqtip="50"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/6bdd43fbb610cd9fa4245dc97bae6233?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1347385" alt="avatar image" title="AnyOtherProgrammer">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1001058/anyotherprogrammer.html" rel="user" nodeid="1001058" data-hasqtip="51">AnyOtherProgrammer</a> edited</p>
+            <h4 class="title"><a href="/questions/1347385/how-to-call-a-java-method-with-a-type-parameter.html">how to call a java method with a type parameter</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Apr 30, 2017 3:07:40 PM">Apr 30, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1347385-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1006714/karinakebbesen.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1006714" data-hasqtip="52"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/fc9ecc462fd965c345fb9ab1272a2155?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1345754" alt="avatar image" title="KarinaKEbbesen">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1006714/karinakebbesen.html" rel="user" nodeid="1006714" data-hasqtip="53">KarinaKEbbesen</a> published</p>
+            <h4 class="title"><a href="/questions/1345754/how-to-use-unity3d-physics-to-make-a-robot-arm-mov.html">How to use Unity3D physics to make a robot hand move and grab an object?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Apr 28, 2017 5:48:24 AM">Apr 28, '17</span>
+            <span class="tags"><a href="/topics/unity+5.html" class="tag" rel="topic" nodeid="795826" data-hasqtip="144">unity 5</a>·<a href="/topics/physics.html" class="tag" rel="topic" nodeid="60" data-hasqtip="145">physics</a>·<a href="/topics/rotate.html" class="tag" rel="topic" nodeid="640" data-hasqtip="146">rotate</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="147">java</a>·<a href="/topics/joints.html" class="tag" rel="topic" nodeid="794" data-hasqtip="148">joints</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1345754-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/138442/petur.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="138442" data-hasqtip="54"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/8834b5f5a0515578886e05b9b164361d?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1345230" alt="avatar image" title="petur">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/138442/petur.html" rel="user" nodeid="138442" data-hasqtip="55">petur</a> published</p>
+            <h4 class="title"><a href="/questions/1345230/how-to-launch-unity-android-app-on-startup.html">How to launch unity android app on startup?</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Apr 27, 2017 12:48:48 PM">Apr 27, '17</span>
+            <span class="tags"><a href="/topics/plugin.html" class="tag" rel="topic" nodeid="45" data-hasqtip="149">plugin</a>·<a href="/topics/android+build.html" class="tag" rel="topic" nodeid="406707" data-hasqtip="150">android build</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="151">java</a>·<a href="/topics/startup.html" class="tag" rel="topic" nodeid="704" data-hasqtip="152">startup</a>·<a href="/topics/manifest.html" class="tag" rel="topic" nodeid="172029" data-hasqtip="153">manifest</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1345230-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/999520/frobei.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="999520" data-hasqtip="56"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/02193e037da4368993ac4becca4e3455?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-829774" alt="avatar image" title="Frobei">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/999520/frobei.html" rel="user" nodeid="999520" data-hasqtip="57">Frobei</a> edited</p>
+            <h4 class="title"><a href="/questions/829774/importing-a-unity3d-scene-into-android-fragment.html">Importing a Unity3D scene into Android Fragment</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Apr 27, 2017 6:39:44 AM">Apr 27, '17</span>
+            <span class="tags"><a href="/topics/android.html" class="tag" rel="topic" nodeid="697" data-hasqtip="154">android</a>·<a href="/topics/java.html" class="tag" rel="topic" nodeid="1281" data-hasqtip="155">java</a>·<a href="/topics/fragment.html" class="tag" rel="topic" nodeid="3795" data-hasqtip="156">fragment</a></span>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted ">
+                <span>2</span> Replies</p>
+
+        <p id="post-829774-score-wrapper" class="votes muted">
+            <span>1</span> Votes</p>
+    </div>
+</div>
+<div class="node-list-item question-list-item">
+    <div class="gravatar-wrapper">
+<a href="/users/1002908/shayeb.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="1002908" data-hasqtip="58"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/2781578ca6e4ee6395cf173329394992?d=identicon&amp;r=PG&amp;s=32" id="user-avatar-1334166" alt="avatar image" title="shayeb">
+</a>    </div>
+    <div class="info">
+        <p><a href="/users/1002908/shayeb.html" rel="user" nodeid="1002908" data-hasqtip="59">shayeb</a> asked</p>
+            <h4 class="title"><a href="/questions/1334166/how-to-add-flappy-bird-high-score.html">how to add Flappy bird High Score</a>
+        </h4>
+
+        <p class="last-active-user muted">
+            <span title="Apr 2, 2017 1:01:23 AM">Apr 2, '17</span>
+            in <a class="space-name" href="/spaces/9/help.html">Help Room</a>
+        </p>
+    </div>
+    <div class="counts">
+            <p class="answers muted  unanswered">
+                <span>0</span> Replies</p>
+
+        <p id="post-1334166-score-wrapper" class="votes muted">
+            <span>0</span> Votes</p>
+    </div>
+</div><div class="pagination">
+<ul>
+<li class="active"><a>1</a></li>
+<li><a href="?page=2&amp;pageSize=30&amp;sort=active&amp;filter=all">2</a></li>
+<li><a href="?page=3&amp;pageSize=30&amp;sort=active&amp;filter=all">3</a></li>
+<li><a href="?page=4&amp;pageSize=30&amp;sort=active&amp;filter=all">4</a></li>
+<li><a href="?page=5&amp;pageSize=30&amp;sort=active&amp;filter=all">5</a></li>
+<li class="next">
+<a href="?page=2&amp;pageSize=30&amp;sort=active&amp;filter=all" title="Next">›</a>
+</li>
+<li class="last">
+<a href="?page=21&amp;pageSize=30&amp;sort=active&amp;filter=all" title="Last (21)">»</a>
+</li>
+</ul>
+</div>    </div>
+</div>
+
+
+
+
+
+
+
+                                </div>
+                                <div class="span4 sidebarTwo">
+        <div>
+             <h3>Welcome to Unity Answers</h3>     <p>The best place to ask and answer questions about development with Unity. </p> <p>To help users navigate the site we have posted a <a href="http://answers.unity3d.com/page/userguide.html">site navigation guide. </a> </p> <p> If you are a new user to Unity Answers, check out our <a href="/page/faq.html">FAQ</a> for more information.</p> 
+<p>Make sure to check out our <a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a> for commonly asked Unity questions. </p> 
+ <p>If you are a moderator, see our <a href="/page/modguide.html">Moderator Guidelines</a> page.</p>  <p>We are making improvements to UA, see the <a href="/page/changes.html">list of changes</a>.</p> 
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            
+
+
+<div class="widget topic-follow-widget">
+    <div class="widget-header">
+        <i class="icon-arrow-right"></i>
+                <a href="/follow/java/topic.html" class="btn btn-success pull-right widget-action"><i class="icon-ok-sign"></i>
+                    Follow This Topic</a>
+        <h3>Follow This Topic</h3>
+    </div>
+    <div class="widget-content">
+        <p>
+            <a class="btn btn-small" title="Follow by RSS" href="/feed/1281/topic.rss">
+                <i class="icon-rss"></i>
+
+                Follow by RSS </a>
+        </p>
+
+        <p>
+<strong>1</strong> Person is following this topic.
+        </p><div class="followers">
+
+<a href="/users/26819/taxvi.html" style="display: inline-block; max-width: 24px;" rel="user" nodeid="26819" data-hasqtip="60"> <img class="gravatar " width="24" src="https://secure.gravatar.com/avatar/c6a8be1e81ddb131d80f096f0b745efc?d=identicon&amp;r=PG&amp;s=24" id="" alt="avatar image" title="taxvi">
+</a>        </div>
+        <p></p>
+    </div>
+</div>
+
+
+
+
+        </div>
+        <div>
+            
+<div class="widget" id="recent-topics-widget">
+    <div class="widget-header">
+        <i class="icon-tags"></i>
+        <h3>Popular Topics</h3>
+    </div>
+<div class="widget-content topic-block tags" style="position: relative;">
+                <a class="tag" nodeid="730" rel="topic" no-popover="1" href="/topics/c%23.html" data-hasqtip="157" oldtitle="see questions tagged 'c#'" title="">c#</a>
+                <a class="tag" nodeid="56" rel="topic" no-popover="1" href="/topics/animation.html" data-hasqtip="158" oldtitle="see questions tagged 'animation'" title="">animation</a>
+                <a class="tag" nodeid="697" rel="topic" no-popover="1" href="/topics/android.html" data-hasqtip="159" oldtitle="see questions tagged 'android'" title="">android</a>
+                <a class="tag" nodeid="418" rel="topic" no-popover="1" href="/topics/javascript.html" data-hasqtip="160" oldtitle="see questions tagged 'javascript'" title="">javascript</a>
+                <a class="tag" nodeid="96" rel="topic" no-popover="1" href="/topics/camera.html" data-hasqtip="161" oldtitle="see questions tagged 'camera'" title="">camera</a>
+                <a class="tag" nodeid="795826" rel="topic" no-popover="1" href="/topics/unity+5.html" data-hasqtip="162" oldtitle="see questions tagged 'unity 5'" title="">unity 5</a>
+                <a class="tag" nodeid="4" rel="topic" no-popover="1" href="/topics/gui.html" data-hasqtip="163" oldtitle="see questions tagged 'gui'" title="">gui</a>
+                <a class="tag" nodeid="107" rel="topic" no-popover="1" href="/topics/rotation.html" data-hasqtip="164" oldtitle="see questions tagged 'rotation'" title="">rotation</a>
+                <a class="tag" nodeid="75" rel="topic" no-popover="1" href="/topics/collision.html" data-hasqtip="165" oldtitle="see questions tagged 'collision'" title="">collision</a>
+                <a class="tag" nodeid="149" rel="topic" no-popover="1" href="/topics/2d.html" data-hasqtip="166" oldtitle="see questions tagged '2d'" title="">2d</a>
+                <a class="tag" nodeid="289" rel="topic" no-popover="1" href="/topics/error.html" data-hasqtip="167" oldtitle="see questions tagged 'error'" title="">error</a>
+                <a class="tag" nodeid="16" rel="topic" no-popover="1" href="/topics/gameobject.html" data-hasqtip="168" oldtitle="see questions tagged 'gameobject'" title="">gameobject</a>
+                <a class="tag" nodeid="39" rel="topic" no-popover="1" href="/topics/shader.html" data-hasqtip="169" oldtitle="see questions tagged 'shader'" title="">shader</a>
+                <a class="tag" nodeid="60" rel="topic" no-popover="1" href="/topics/physics.html" data-hasqtip="170" oldtitle="see questions tagged 'physics'" title="">physics</a>
+                <a class="tag" nodeid="3001" rel="topic" no-popover="1" href="/topics/ios.html" data-hasqtip="171" oldtitle="see questions tagged 'ios'" title="">ios</a>
+                <a class="tag" nodeid="95" rel="topic" no-popover="1" href="/topics/texture.html" data-hasqtip="172" oldtitle="see questions tagged 'texture'" title="">texture</a>
+                <a class="tag" nodeid="587" rel="topic" no-popover="1" href="/topics/ui.html" data-hasqtip="173" oldtitle="see questions tagged 'ui'" title="">ui</a>
+                <a class="tag" nodeid="264" rel="topic" no-popover="1" href="/topics/rigidbody.html" data-hasqtip="174" oldtitle="see questions tagged 'rigidbody'" title="">rigidbody</a>
+                <a class="tag" nodeid="225" rel="topic" no-popover="1" href="/topics/movement.html" data-hasqtip="175" oldtitle="see questions tagged 'movement'" title="">movement</a>
+                <a class="tag" nodeid="43" rel="topic" no-popover="1" href="/topics/editor.html" data-hasqtip="176" oldtitle="see questions tagged 'editor'" title="">editor</a>
+                <a class="tag" nodeid="129" rel="topic" no-popover="1" href="/topics/instantiate.html" data-hasqtip="177" oldtitle="see questions tagged 'instantiate'" title="">instantiate</a>
+                <a class="tag" nodeid="181" rel="topic" no-popover="1" href="/topics/raycast.html" data-hasqtip="178" oldtitle="see questions tagged 'raycast'" title="">raycast</a>
+                <a class="tag" nodeid="124734" rel="topic" no-popover="1" href="/topics/scripting+problem.html" data-hasqtip="179" oldtitle="see questions tagged 'scripting problem'" title="">scripting problem</a>
+                <a class="tag" nodeid="161" rel="topic" no-popover="1" href="/topics/collider.html" data-hasqtip="180" oldtitle="see questions tagged 'collider'" title="">collider</a>
+                <a class="tag" nodeid="142" rel="topic" no-popover="1" href="/topics/networking.html" data-hasqtip="181" oldtitle="see questions tagged 'networking'" title="">networking</a>
+                <a class="tag" nodeid="238" rel="topic" no-popover="1" href="/topics/transform.html" data-hasqtip="182" oldtitle="see questions tagged 'transform'" title="">transform</a>
+                <a class="tag" nodeid="92" rel="topic" no-popover="1" href="/topics/terrain.html" data-hasqtip="183" oldtitle="see questions tagged 'terrain'" title="">terrain</a>
+                <a class="tag" nodeid="101" rel="topic" no-popover="1" href="/topics/mesh.html" data-hasqtip="184" oldtitle="see questions tagged 'mesh'" title="">mesh</a>
+                <a class="tag" nodeid="905" rel="topic" no-popover="1" href="/topics/array.html" data-hasqtip="185" oldtitle="see questions tagged 'array'" title="">array</a>
+                <a class="tag" nodeid="151" rel="topic" no-popover="1" href="/topics/prefab.html" data-hasqtip="186" oldtitle="see questions tagged 'prefab'" title="">prefab</a>
+        <br>
+        <a href="http://answers.unity3d.com/topics.html">View all</a>
+
+</div>
+</div>
+
+
+        </div>
+        <div>
+            <div class="widget" id="recent-badges-widget">
+    <div class="widget-header">
+        <i class="icon-certificate"></i>
+        <h3>Recent Badges</h3>
+    </div>
+    <div class="widget-content" style="position: relative;">
+    <ul class="answer-badges">
+        <li>
+<a href="/badge/28852/supporter.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" class="award" awardtype="28852" desc="supporter" rel="award" nodeid="26327803" data-hasqtip="71"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" alt="Supporter">
+</a>            &nbsp;
+<a href="/users/1023927/theo-pnv.html" rel="user" nodeid="1023927" data-hasqtip="61">theo-pnv</a>        </li>
+        <li>
+<a href="/badge/15943/notable-question.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.silver.name.png" class="award" awardtype="15943" desc="notable_question" rel="award" nodeid="26326945" data-hasqtip="72"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.silver.name.png" alt="Notable Question">
+</a>            &nbsp;
+<a href="/users/663726/foxpro.html" rel="user" nodeid="663726" data-hasqtip="62">FoxPro</a>        </li>
+        <li>
+<a href="/badge/28852/supporter.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" class="award" awardtype="28852" desc="supporter" rel="award" nodeid="26326197" data-hasqtip="73"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" alt="Supporter">
+</a>            &nbsp;
+<a href="/users/1023924/n00bmind.html" rel="user" nodeid="1023924" data-hasqtip="63">n00bmind</a>        </li>
+        <li>
+<a href="/badge/4451647/student.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.student.name.png" class="award" awardtype="4451647" desc="student" rel="award" nodeid="26326196" data-hasqtip="74"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.student.name.png" alt="Student">
+</a>            &nbsp;
+<a href="/users/1013734/bruno-chaves.html" rel="user" nodeid="1013734" data-hasqtip="64">Bruno_Chaves</a>        </li>
+        <li>
+<a href="/badge/15943/notable-question.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.silver.name.png" class="award" awardtype="15943" desc="notable_question" rel="award" nodeid="26326192" data-hasqtip="75"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.silver.name.png" alt="Notable Question">
+</a>            &nbsp;
+<a href="/users/563080/carlqwe.html" rel="user" nodeid="563080" data-hasqtip="65">carlqwe</a>        </li>
+        <li>
+<a href="/badge/20968/popular-question.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.bronze.name.png" class="award" awardtype="20968" desc="popular_question" rel="award" nodeid="26326191" data-hasqtip="76"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.questionviewcount.bronze.name.png" alt="Popular Question">
+</a>            &nbsp;
+<a href="/users/999409/wilbertlam.html" rel="user" nodeid="999409" data-hasqtip="66">wilbertllama</a>        </li>
+        <li>
+<a href="/badge/4451642/necromancer.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.necromancer.name.png" class="award" awardtype="4451642" desc="necromancer" rel="award" nodeid="26326024" data-hasqtip="77"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.necromancer.name.png" alt="Necromancer">
+</a>            &nbsp;
+<a href="/users/6612/bunny83.html" rel="user" nodeid="6612" data-hasqtip="67">Bunny83</a>        </li>
+        <li>
+<a href="/badge/41898/good-answer.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.answerscore.silver.name.png" class="award" awardtype="41898" desc="good_answer" rel="award" nodeid="26326023" data-hasqtip="78"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.answerscore.silver.name.png" alt="Good Answer">
+</a>            &nbsp;
+<a href="/users/6612/bunny83.html" rel="user" nodeid="6612" data-hasqtip="68">Bunny83</a>        </li>
+        <li>
+<a href="/badge/28852/supporter.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" class="award" awardtype="28852" desc="supporter" rel="award" nodeid="26326019" data-hasqtip="79"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.voteupcount.bronze.name.png" alt="Supporter">
+</a>            &nbsp;
+<a href="/users/1023922/hempshark.html" rel="user" nodeid="1023922" data-hasqtip="69">hempshark</a>        </li>
+        <li>
+<a href="/badge/4451648/teacher.html" awardiconsrc="/plugins/resources/unity-thub-1632/images/badges/awards.teacher.name.png" class="award" awardtype="4451648" desc="teacher" rel="award" nodeid="26325882" data-hasqtip="80"> <img src="/plugins/resources/unity-thub-1632/images/badges/awards.teacher.name.png" alt="Teacher">
+</a>            &nbsp;
+<a href="/users/1007968/m-vulicevic.html" rel="user" nodeid="1007968" data-hasqtip="70">m_vulicevic</a>        </li>
+    </ul>
+    </div>
+</div>
+
+        </div>
+
+                                </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="push"></div>
+</section></div>
+
+
+<a class="dummy-navbar-link hidden"></a>
+<div class="off-canvas-nav sidr left" id="sidr" style="display:none;">
+    <ul class="nav nav-list">
+            <li class="nav-header">
+Anonymous        </li>
+        <li>
+            <a href="/users/login.html">Sign in</a>
+        </li>
+        <li class="nav-header">Create</li>
+        <li>
+            <a href="/questions/ask.html">Ask a question</a>
+        </li>
+
+
+        <li class="nav-header">Spaces</li>
+
+
+
+        
+                    <li>
+                <a class="main-nav" href="/spaces/8/index.html">Default</a>
+            </li><li>
+                <a class="main-nav" href="/spaces/9/index.html">Help Room</a>
+            </li><li>
+                <a class="main-nav" href="/spaces/12/index.html">META</a>
+            </li><li>
+                <a class="main-nav" href="/spaces/11/index.html">Moderators</a>
+
+
+
+        </li><li class="nav-header">Explore</li>
+        <li>
+            <a href="http://answers.unity3d.com/topics.html">Topics</a>
+        </li>
+            <li>
+                <a href="/questions/index.html">Questions</a>
+            </li>
+
+        <li>
+            <a href="/users/index.html">Users</a>
+        </li>
+
+
+        <li>
+            <a href="/badge/types.html">Badges</a>
+        </li>
+    </ul>
+</div><script type="text/x-jquery-tmpl" id="user-popover">
+    <div class="user-popover ahub-popover">
+        <div class="ahub-popover-content">
+            <div class="header">
+                <div class="popover-gravatar">
+                    <a href="${profileUser.profileUrl}">
+                        <img id="" class="gravatar " height="84" width="84" title="${profileUser.displayName}" alt="avatar image"  src="${pageContext.url.userAvatar.replace("%7BuserId%7D",profileUser.id)}?s=84">
+                    </a>
+                </div>
+                <p class="nameAndTagline">
+                    <a href="${profileUser.profileUrl}" class="username">${profileUser.displayName}</a><br>
+                    {{if profileUser.tagline}}<span class="tagline">${profileUser.tagline}</span>{{else}}{{if profileUser.location}}<span class="location">${profileUser.location}</span>{{/if}}{{/if}}
+                </p>
+                {{if currentUser.id != profileUser.id}}<a class="btn btn-follow {{if currentUserFollowing}}on btn-info{{/if}}" command="follow" data-node-type="user" nodeId="${profileUser.id}"></a>{{/if}}
+            </div>
+            <div class="body">
+                <div class="stats-wrapper">
+                    <ul class="stats unstyled">
+                        <li><a href="${profileUser.profileUrl}"><span class="count">${profileUser.reputation}</span><br>${i18n.reputation}</a></li>
+                        <li><a href="${profileUser.profileUrl}"><span class="count">${profileUser.postCount}</span><br>${i18n.posts}</a></li>
+                        <li><a href="${profileUser.profileUrl}"><span class="count">${profileUser.userFollowCount}</span><br>${i18n.following}</a></li>
+                        <li><a href="${profileUser.profileUrl}"><span class="count">${profileUser.followerCount}</span><br>${i18n.followers}</a></li>
+                        <li><a href="${profileUser.profileUrl}"><span class="count">${profileUser.creationDateObj.getMonth() + 1 + "/" + profileUser.creationDateObj.getFullYear().toString().substring(2,4)}</span><br>${i18n.joined}</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script><script type="text/x-jquery-tmpl" id="topic-popover">
+    <div class="topic-popover ahub-popover">
+        <div class="ahub-popover-content">
+            <div class="header">
+                <div class="popover-icon">
+                    <a href="${topic.url}">
+                        <img id="" class="gravatar " height="84" width="84" title="${topic.name}" alt="${topic.name} icon" src="${topic.icon}">
+                    </a>
+                </div>
+                <p class="name"><a href="${topic.url}">${topic.name}</a></p>
+                <a class="btn btn-follow {{if currentUserFollowing}}on btn-info{{/if}}" command="follow" data-node-type="topic" nodeId="${topic.name}"></a>
+            </div>
+            <div class="body">
+                <div class="stats-wrapper">
+                    <ul class="stats unstyled">
+                        <li><a href="${topic.url}"><span class="count">${followerCount}</span><br>${i18n.followers}</a></li>
+                        <li><a href="${topic.url}"><span class="count">${questionCount}</span><br>${i18n.questions}</a></li>
+                        <li><a href="${topic.url}"><span class="count">${answerCount}</span><br>${i18n.answers}</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                {{if description}}<div class="description">{{html description}}</div>{{/if}}
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/x-jquery-tmpl" id="badge-popover">
+    <div class="badge-popover ahub-popover">
+        <div class="ahub-popover-content">
+            <div class="header">
+                <div class="pull-left">
+                    <img class="gravatar award-icon" height="84" width="84" title="${awardType.name}" alt="avatar image" src="${awardType.awardIconSrc}">
+                </div>
+                <p class="nameAndTagline">
+                    <a href="${awardType.awardUrl}" class="name">${awardType.name}</a><br>
+                    <span class="tagline">${awardType.description}</span>
+                </p>   
+            </div>
+            <div class="body">
+                	<div class="stats-wrapper">
+	                	<ul class="stats unstyled">
+							<li><a href="${awardType.awardUrl}"><span class="count">${awardPager.totalCount}</span><br>${i18n.awarded}</a></li>
+	                		<li>
+	                			<ul class="users unstyled">
+	                				<li><span class="user-list-title">${i18n.completedBy}:</span></li>
+			                		{{each awardPager.list}}
+				                		<li>
+					                		<a href="${$value.user.profileUrl}" title="${$value.user.username}">
+					                			<img class="gravatar " width="32" height="32" src="${$value.user.avatar}?s=32">
+					                		</a>
+					                	</li>
+				                	{{/each}}
+				                	<div class="clearfix"></div>
+		                		</ul>
+	                		</li>
+	                		<div class="clearfix"></div>
+	                	</ul>
+	                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript">
+    var searchItemMouseDown = false;
+    var $searchAuto = $("#search-query").autocomplete({
+        open: function () {
+            $searchAuto.addClass("open");
+            $("#searchResultsAutoComplete").find("a").mousedown(function (e) {
+                searchItemMouseDown = true;
+            });
+        },
+        close: function (e) {
+            $searchAuto.removeClass("open");
+        },
+        appendTo: '#searchResultsAutoComplete',
+        autoFocus: false,
+        highlight: function (match, keywords) {
+            keywords = keywords.split(' ').join('|');
+            return match.replace(new RegExp("(" + keywords + ")", "gi"), '<b>$1</b>');
+        },
+        source: function (request, response) {
+            var query = request.term;
+            var labelText = $('<div/>').text(request.term).html();
+
+            if (!/\s/.test(query)) {
+                query += "*";
+            }
+
+            $.ajax({
+                url: '/search.json',
+                dataType: 'json',
+                minLength: 0,
+                delay: 30,
+                data: { q: query, page: 1, pageSize: 7, type: "object", compact: 'true' },
+                success: function (data) {
+                	var allResults = data.searchResults.results.concat(data.externalSearchResults.results);
+                    var $results = $.map(allResults, function (item, index) {
+                        if (item != null) {
+                            if (item.username){
+                                var name = item.username;
+                                if(item.realname){
+                                    name += " | " + item.realname;
+                                }
+                                return {
+
+                                    label: name.replace(
+                                            new RegExp(
+                                                            "(?![^&;]+;)(?!<[^<>]*)(" +
+                                                            $.ui.autocomplete.escapeRegex(request.term) +
+                                                            ")(?![^<>]*>)(?![^&;]+;)", "gi"
+                                            ), "<strong>$1</strong>"),
+                                    url: "/users/%7Bid%7D/%7Bplug%7D.html", //item.id
+                                    value: name,
+                                    id: item.id,
+                                    plug: item.plug,
+                                    type: "User",
+                                    emailHash: item.emailHash
+                                };
+                            }
+                            switch (item.type) {
+                                case 'topic':
+                                    return {
+                                        label: item.name.replace(
+                                                new RegExp(
+                                                        "(?![^&;]+;)(?!<[^<>]*)(" +
+                                                                $.ui.autocomplete.escapeRegex(request.term) +
+                                                                ")(?![^<>]*>)(?![^&;]+;)", "gi"
+                                                ), "<strong>$1</strong>"),
+                                        url: "/topics/%7Bid%7D.html", //item.id
+                                        value: item.name,
+                                        id: item.name,
+                                        plug: item.plug,
+                                        type: "Topic"
+                                    };
+                                case 'user':
+                                    var name = item.username;
+                                    if(item.realname){
+                                        name += " | " + item.realname;
+                                    }
+                                    return {
+
+                                        label: name.replace(
+                                                new RegExp(
+                                                        "(?![^&;]+;)(?!<[^<>]*)(" +
+                                                                $.ui.autocomplete.escapeRegex(request.term) +
+                                                                ")(?![^<>]*>)(?![^&;]+;)", "gi"
+                                                ), "<strong>$1</strong>"),
+                                        url: "/users/%7Bid%7D/%7Bplug%7D.html", //item.id
+                                        value: name,
+                                        id: item.id,
+                                        plug: item.plug,
+                                        type: "User",
+                                        emailHash: item.emailHash
+                                    };
+                                case 'question':
+                                    return {
+                                        label: item.title.replace(
+                                                new RegExp(
+                                                        "(?![^&;]+;)(?!<[^<>]*)(" +
+                                                                $.ui.autocomplete.escapeRegex(request.term) +
+                                                                ")(?![^<>]*>)(?![^&;]+;)", "gi"
+                                                ), "<strong>$1</strong>"),
+                                        url: "/questions/%7Bid%7D/%7Bplug%7D.html", //item.id
+                                        value: item.title,
+                                        id: item.id,
+                                        plug: item.plug,
+                                        type: item.type
+                                    };
+                                default:
+                                    if (item.title) {
+	                                    return {
+	                                        label: item.title.replace(
+	                                                new RegExp(
+	                                                        "(?![^&;]+;)(?!<[^<>]*)(" +
+	                                                                $.ui.autocomplete.escapeRegex(request.term) +
+	                                                                ")(?![^<>]*>)(?![^&;]+;)", "gi"
+	                                                ), "<strong>$1</strong>"),
+	                                        //url: "/content/%7Btype%7D/%7Bid%7D/%7Bplug%7D.html", //item.id
+	                                        url: item.url,
+	                                        value: item.title,
+	                                        id: item.id,
+	                                        plug: item.plug,
+	                                        type: item.type
+	                                    };
+                                    }
+                                    return null;
+                            }
+                        }
+                    });
+                    $results.push({
+                        label: "Search: " + "\"" + $.trim(labelText) + "\"",
+                        url: "/search.html?q={query}",
+                        query: request.term,
+                        value: request.term
+                    });
+                    $results.push({
+                        label: "Add Question: <strong>\"$q\"<\/strong>".replace("$q", $.trim(labelText)),
+                        url: "/questions/ask.html?a=true&q={query}",
+                        query: request.term,
+                        value: request.term
+                    });
+
+                    response($results);
+                }
+            });
+        },
+        select: function (event, ui) {
+            var url = ui.item.url.replace("%7Bid%7D", ui.item.id);
+            url = url.replace("%7Bplug%7D", ui.item.plug);
+            url = url.replace("{query}", ui.item.query);
+            url = url.replace("%7Btype%7D", ui.item.type);
+            window.location = url;
+            return false;
+        }
+    }).keydown(function () {
+                $(this).css('color', '#000');
+            });
+
+    if ($searchAuto.length) {
+        $searchAuto.data("uiAutocomplete")._renderItem = function (ul, item) {
+            var type_str = "";
+            if (item.type == "Topic")
+                    type_str = "<span class='autocomplete-type'>" + "Topic" + "</span>";
+            return $("<li></li>")
+                    .data("item.autocomplete", item)
+                    .append("<a>" + (item.type == 'User' ? '<img class="gravatar" align="left" width="16" height="16" style="margin-right: 5px;" src="http://www.gravatar.com/avatar/'
+                            + item.emailHash + '?s=16&amp;d=identicon&amp;r=PG"/>' : '') + " " + item.label + " " + type_str + "</a>")
+                    .appendTo(ul);
+        };
+    }
+</script><script type="text/javascript">
+
+    $(document).ready(function () {
+        $bottom = $("#bottom");
+        $notFooter = $("#not-footer");
+        $push = $(".push");
+        $push.css("height", $bottom.outerHeight() + "px");
+        $notFooter.css("margin-bottom", "-" + $bottom.outerHeight() + "px");
+
+        $(".dummy-navbar-link").sidr();
+
+        $(".off-canvas-nav-btn").on("click", function(){
+            $.sidr(
+                "open",
+                "sidr",
+                function(){
+                    $(document.body).prepend("<div class='cover'></div>");
+                    $(".cover").fadeIn().on("click", function(){
+                        console.log("click");
+
+                        $.sidr('close', 'sidr');
+                        $(this).remove();
+                    });
+                }
+            );
+        });
+    });
+
+
+    $(".answer-body pre").addClass("prettyprint").addClass("linenums");
+    $(".question-body pre").addClass("prettyprint").addClass("linenums");
+    prettyPrint();
+
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2854981-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script type="text/javascript" id="">(function(f,c,d,e,a,b){a=c.createElement(d);a.async=!0;a.src=e;b=c.getElementsByTagName(d)[0];b.parentNode.insertBefore(a,b)})(window,document,"script","https://u.heatmap.it/log.js");</script><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 6px; display: none; top: 66px; position: absolute; left: 1262px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gstl_51 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
